@@ -28,8 +28,6 @@ the Cramér-Rao lower-bound in astrometry: One dimensional case.](https://iopsci
 
 * <b>Rodrigo A. Lobos</b>, Tae Hyung Kim, Kawin Setsompop, Justin P. Haldar. <br>[Advanced New Linear Predictive Reconstruction Methods for Simultaneous Multislice Imaging.](https://index.mirasmart.com/ISMRM2020/PDFfiles/3437.html)<br><em>International Society for Magnetic Resonance in Medicine Virtual Conference & Exhibition, 2020, p. 3437.</em>
 
-* <b>Rodrigo A. Lobos</b>, R. M. Leahy, Justin P. Haldar. <br>[Autoregression and Structured Low-Rank Modeling of Sinograms.](https://ieeexplore.ieee.org/document/9098484)<br><em>IEEE International Symposium on Biomedical Imaging, Iowa City, 2020, pp. 1437-1440.</em><body>
-  <p style="color:#FF0000";>Red paragraph text</p>
-</body>Finalist for the IEEE ISBI 2020 Best Student Paper Award.
+* <b>Rodrigo A. Lobos</b>, R. M. Leahy, Justin P. Haldar. <br>[Autoregression and Structured Low-Rank Modeling of Sinograms.](https://ieeexplore.ieee.org/document/9098484)<br><em>IEEE International Symposium on Biomedical Imaging, Iowa City, 2020, pp. 1437-1440.</em><b>Finalist for the IEEE ISBI 2020 Best Student Paper Award.</b>
 
 
