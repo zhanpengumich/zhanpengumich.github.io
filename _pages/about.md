@@ -7,11 +7,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-HOLA CHILE
+I am a 5th year PhD student working under the guidance of Professor Justin P. Haldar in the Biomedical Imaging Group (BIG) at the University of Southern California (USC). My research interests include signal processing, magnetic resonance imaging (MRI), computational imaging, inverse problems, and the connections between machine learning and constrained image reconstruction.
 
-CHAO CHILE
-
-A data-driven personal website
+About me
 ======
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
