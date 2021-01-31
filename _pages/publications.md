@@ -25,3 +25,7 @@ the Cramér-Rao lower-bound in astrometry: One dimensional case.](https://iopsci
 
 <b>Conference</b>
 ======
+
+* <b>Rodrigo A. Lobos</b>, Tae Hyung Kim, Kawin Setsompop, Justin P. Haldar. <br>[Advanced New Linear Predictive Reconstruction Methods for Simultaneous Multislice Imaging.](https://index.mirasmart.com/ISMRM2020/PDFfiles/3437.html)<br><em>International Society for Magnetic Resonance in Medicine Virtual Conference & Exhibition, 2020, p. 3437.</em>
+
+
