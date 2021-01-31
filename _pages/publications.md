@@ -11,8 +11,6 @@ author_profile: true
 
 <b>Journal</b>
 ======
-* <b>R. A. Lobos</b>, W. S. Hoge, A. Javed, C. Liao, K. Setsompop, K. S. Nayak, J. P. Haldar. 
-
-  [Robust Autocalibrated Structured Low-Rank EPI Ghost Correction.](https://onlinelibrary.wiley.com/doi/10.1002/mrm.28638)
+* <b>R. A. Lobos</b>, W. S. Hoge, A. Javed, C. Liao, K. Setsompop, K. S. Nayak, J. P. Haldar. <br>[Robust Autocalibrated Structured Low-Rank EPI Ghost Correction.](https://onlinelibrary.wiley.com/doi/10.1002/mrm.28638)
 
 
