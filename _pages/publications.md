@@ -34,3 +34,5 @@ the Cramér-Rao lower-bound in astrometry: One dimensional case.](https://iopsci
 
 * <b>Rodrigo A. Lobos</b>, Justin P. Haldar. <br>[Advanced New Linear Predictive Reconstruction Methods for Simultaneous Multislice Imaging.](https://index.mirasmart.com/ISMRM2019/PDFfiles/2407.html)<br><em>International Society for Magnetic Resonance in Medicine 27th Annual Meeting, Montreal, 2019, p. 2407.</em>
 
+* <b>Rodrigo A. Lobos</b>, A. Javed, K. S. Nayak, W. S. Hoge, J. P. Haldar,. <br>[Robust Autocalibrated LORAKS for Improved EPI Ghost Correction with Structured Low-Rank Matrix Models.](http://indexsmart.mirasmart.com/ISMRM2018/PDFfiles/3533.html)<br><em> Joint Annual Meeting ISMRM-ESMRMB, Paris, 2018, p. 3533.</em>
+
