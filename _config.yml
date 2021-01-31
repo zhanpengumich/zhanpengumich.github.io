@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Rodrigo A. Lobos"
   avatar           : "pic_rl_scaled579.jpg"
-  bio              : "PhD student at USC"
+  bio              : "PhD student at USC /n rlobos@usc.edu"
   location         : "Los Angeles, CA"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=J7WSE60AAAAJ&hl=en&oi=ao"
-  email            : "rlobos@usc.edu"
+  email            : #"rlobos@usc.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
