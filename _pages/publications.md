@@ -32,5 +32,5 @@ the Cramér-Rao lower-bound in astrometry: One dimensional case.](https://iopsci
 
 * <b>Rodrigo A. Lobos</b>, R. M. Leahy, Justin P. Haldar. <br>[Low-Rank Modeling of Local Sinogram Neighborhoods with Tomographic Applications.](https://ieeexplore.ieee.org/abstract/document/9048651?casa_token=szNsamAoBtMAAAAA:xqH-QFDp040nltCkeQThTcswpRDfW3zsajBj_SSKOJ2oGAxfbWcQB5ywyHBoU8sSgjXt5eigmA)<br><em>Asilomar Conference on Signals, Systems, and Computers, Pacific Grove, 2019, pp. 65-68. .</em><br><b>Invited presentation.</b> 
 
-
+* <b>Rodrigo A. Lobos</b>, Justin P. Haldar. <br>[Advanced New Linear Predictive Reconstruction Methods for Simultaneous Multislice Imaging.](https://index.mirasmart.com/ISMRM2019/PDFfiles/2407.html)<br><em>International Society for Magnetic Resonance in Medicine 27th Annual Meeting, Montreal, 2019, p. 2407.</em>
 
