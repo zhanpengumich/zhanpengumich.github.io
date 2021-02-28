@@ -11,7 +11,7 @@ author_profile: true
 
 <b>Journal</b>
 ======
-* <b>R. A. Lobos</b>, W. S. Hoge, A. Javed, C. Liao, K. Setsompop, K. S. Nayak, J. P. Haldar. <br>[Robust Autocalibrated Structured Low-Rank EPI Ghost Correction.](https://onlinelibrary.wiley.com/doi/10.1002/mrm.28638)<br><em>Magnetic Resonance in Medicine. In Press.</em>
+* <b>R. A. Lobos</b>, W. S. Hoge, A. Javed, C. Liao, K. Setsompop, K. S. Nayak, J. P. Haldar. <br>[Robust Autocalibrated Structured Low-Rank EPI Ghost Correction.](https://onlinelibrary.wiley.com/doi/10.1002/mrm.28638)<br><em>Magnetic Resonance in Medicine 85:3404-3419, 2021.</em>
 * Gonzalo Díaz, Julián M. Ortiz,  Jorge F. Silva,  <b>Rodrigo A. Lobos</b>, Alvaro Egaña. <br>[Variogram-Based Descriptors for Comparison
 and Classification of Rock Texture Images.](https://link.springer.com/article/10.1007/s11004-019-09833-5)<br><em>Mathematical Geoscience 52(4):451-476, 2020.</em>
 * Sebastián Espinosa, Jorge F. Silva, Rene A. Mendez, <b>Rodrigo Lobos</b>, Marcos E. Orchard. <br>[Optimality of the maximum likelihood estimator in astrometry.](https://www.aanda.org/articles/aa/abs/2018/08/aa32537-17/aa32537-17.html)<br><em>Astronomy & Astrophysics 618:A95, 2018.</em>
@@ -30,7 +30,7 @@ the Cramér-Rao lower-bound in astrometry: One dimensional case.](https://iopsci
 
 * <b>Rodrigo A. Lobos</b>, R. M. Leahy, Justin P. Haldar. <br>[Autoregression and Structured Low-Rank Modeling of Sinograms.](https://ieeexplore.ieee.org/document/9098484)<br><em>IEEE International Symposium on Biomedical Imaging, Iowa City, 2020, pp. 1437-1440.</em><br><b><font color="blue">Finalist for the IEEE ISBI 2020 Best Student Paper Award.</font></b> 
 
-* <b>Rodrigo A. Lobos</b>, R. M. Leahy, Justin P. Haldar. <br>[Low-Rank Modeling of Local Sinogram Neighborhoods with Tomographic Applications.](https://ieeexplore.ieee.org/abstract/document/9048651?casa_token=szNsamAoBtMAAAAA:xqH-QFDp040nltCkeQThTcswpRDfW3zsajBj_SSKOJ2oGAxfbWcQB5ywyHBoU8sSgjXt5eigmA)<br><em>Asilomar Conference on Signals, Systems, and Computers, Pacific Grove, 2019, pp. 65-68. .</em><br><b>Invited presentation.</b> 
+* <b>Rodrigo A. Lobos</b>, R. M. Leahy, Justin P. Haldar. <br>[Low-Rank Modeling of Local Sinogram Neighborhoods with Tomographic Applications.](https://ieeexplore.ieee.org/abstract/document/9048651?casa_token=szNsamAoBtMAAAAA:xqH-QFDp040nltCkeQThTcswpRDfW3zsajBj_SSKOJ2oGAxfbWcQB5ywyHBoU8sSgjXt5eigmA)<br><em>Asilomar Conference on Signals, Systems, and Computers, Pacific Grove, 2019, pp. 65-68. .</em><br><b><font color="blue">Invited presentation.</font></b> 
 
 * <b>Rodrigo A. Lobos</b>, Justin P. Haldar. <br>[Improving the Performance of Accelerated Image Reconstruction in K-Space: The Importance of Kernel Shape.](https://index.mirasmart.com/ISMRM2019/PDFfiles/2407.html)<br><em>International Society for Magnetic Resonance in Medicine 27th Annual Meeting, Montreal, 2019, p. 2407.</em>
 
@@ -38,4 +38,4 @@ the Cramér-Rao lower-bound in astrometry: One dimensional case.](https://iopsci
 
 * <b>Rodrigo A. Lobos</b>, A. Javed, K. S. Nayak, W. S. Hoge, J. P. Haldar. <br>[Robust Autocalibrated LORAKS for EPI Ghost Correction.](https://ieeexplore.ieee.org/abstract/document/8363661?casa_token=zWhcEhd8NxYAAAAA:rZkeAkY5JH8vM56SUOPGGdy-hldYhqdhScmr_2pPp4mPYPuzVOZyX1YJ2nXMC2LAV6KgoRNJuA)<br><em> IEEE International Symposium on Biomedical Imaging, Washington, DC, 2018, pp. 663-666.</em>
 
-* <b>Rodrigo A. Lobos</b>,  T. H. Kim, W. S. Hoge, J. P. Haldar. <br>[Navigator-free EPI ghost correction using low-rank matrix modeling: Theoretical insights and practical improvements.](http://indexsmart.mirasmart.com/ISMRM2017/PDFfiles/0449.html)<br><em>International Society for Magnetic Resonance in Medicine 25th Annual Meeting, Honolulu, 2017, p. 449.</em><br><b>Recipient of a Summa Cum Laude ISMRM Merit Award (Featured with a Power Pitch presentation (hand-selected as one of the 220 most interesting abstracts out of 6,780 submissions to the conference).</b>
+* <b>Rodrigo A. Lobos</b>,  T. H. Kim, W. S. Hoge, J. P. Haldar. <br>[Navigator-free EPI ghost correction using low-rank matrix modeling: Theoretical insights and practical improvements.](http://indexsmart.mirasmart.com/ISMRM2017/PDFfiles/0449.html)<br><em>International Society for Magnetic Resonance in Medicine 25th Annual Meeting, Honolulu, 2017, p. 449.</em><br><b><font color="blue">Recipient of a Summa Cum Laude ISMRM Merit Award (Featured with a Power Pitch presentation (hand-selected as one of the 220 most interesting abstracts out of 6,780 submissions to the conference).</font></b>
