@@ -11,6 +11,7 @@ author_profile: true
 
 <b>Journal</b>
 ======
+* <b>R. A. Lobos</b>, M. U. Ghani, W. C. Karl, R. M. Leahy, J. P. Haldar. <br>[Autoregression and Structured Low-Rank Modeling of Sinogram Neighborhoods.](https://ieeexplore.ieee.org/document/9547841)<br><em>IEEE Transactions on Computational Imaging 6:1044-1054, 2021.</em>
 * <b>R. A. Lobos</b>, W. S. Hoge, A. Javed, C. Liao, K. Setsompop, K. S. Nayak, J. P. Haldar. <br>[Robust Autocalibrated Structured Low-Rank EPI Ghost Correction.](https://onlinelibrary.wiley.com/doi/10.1002/mrm.28638)<br><em>Magnetic Resonance in Medicine 85:3404-3419, 2021.</em>
 * Gonzalo Díaz, Julián M. Ortiz,  Jorge F. Silva,  <b>Rodrigo A. Lobos</b>, Alvaro Egaña. <br>[Variogram-Based Descriptors for Comparison
 and Classification of Rock Texture Images.](https://link.springer.com/article/10.1007/s11004-019-09833-5)<br><em>Mathematical Geoscience 52(4):451-476, 2020.</em>
@@ -25,6 +26,10 @@ the Cramér-Rao lower-bound in astrometry: One dimensional case.](https://iopsci
 
 <b>Conference</b>
 ======
+
+* G. Ramos-Llorden, <b>R. A. Lobos</b>, T. H. Kim, Q. Tian, S. Tounetki, T. Witzel, B. Keil, A. Yendiki, B. Bilgic, J. P. Haldar, S. Huang. <br>[Improved multi-shot EPI ghost correction for high gradient strength diffusion MRI using structured low-rank modeling k-space reconstruction.](https://index.mirasmart.com/ISMRM2021/PDFfiles/1346.html)<br><em>International Society for Magnetic Resonance in Medicine Virtual Conference & Exhibition, 2021, p. 1346.</em>
+
+* D. Kim, <b>R. A. Lobos</b>, J. Coll-Font, M. van den Boomen, J. Conklin, J. Pang, D. Staeb, P. Speier, X. Bi, B. Ghoshhajra, J. P. Haldar, C. T. Nguyen. <br>[Feasibility of single breath-hold CINE with combined simultaneous multi-slice (SMS) and region-optimized virtual (ROVir) coils.](https://index.mirasmart.com/ISMRM2021/PDFfiles/0025.html)<br><em>International Society for Magnetic Resonance in Medicine Virtual Conference & Exhibition, 2021, p. 25.</em>
 
 * <b>Rodrigo A. Lobos</b>, Tae Hyung Kim, Kawin Setsompop, Justin P. Haldar. <br>[Advanced New Linear Predictive Reconstruction Methods for Simultaneous Multislice Imaging.](https://index.mirasmart.com/ISMRM2020/PDFfiles/3437.html)<br><em>International Society for Magnetic Resonance in Medicine Virtual Conference & Exhibition, 2020, p. 3437.</em>
 
