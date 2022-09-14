@@ -11,6 +11,7 @@ author_profile: true
 
 <b>Journal</b>
 ======
+* G. Ramos-Llorden, <b>R. A. Lobos<b>, T. H. Kim, Q. Tian, T. Witzel, H.-H. Lee, A. Scholz, B. Keil, A. Yendiki, B. Bilgic, J. P. Haldar, S. Y. Huang. <br>[High-fidelity, high-spatial-resolution diffusion MRI of the ex vivo whole human brain at ultra-high gradient strength with structured low-rank EPI ghost correction](ralobos.github.io)<br><em> NMR in Biomedicine (In press).</em>
 * <b>R. A. Lobos</b>, J. P. Haldar. <br>[On the Shape of Convolution Kernels in MRI Reconstruction:  Rectangles versus Ellipsoids](https://onlinelibrary.wiley.com/doi/epdf/10.1002/mrm.29189)<br><em> Magnetic Resonance in Medicine 87:2989-2996, 2022.</em>
 * <b>R. A. Lobos</b>, M. U. Ghani, W. C. Karl, R. M. Leahy, J. P. Haldar. <br>[Autoregression and Structured Low-Rank Modeling of Sinogram Neighborhoods.](https://ieeexplore.ieee.org/document/9547841)<br><em>IEEE Transactions on Computational Imaging 6:1044-1054, 2021.</em>
 * <b>R. A. Lobos</b>, W. S. Hoge, A. Javed, C. Liao, K. Setsompop, K. S. Nayak, J. P. Haldar. <br>[Robust Autocalibrated Structured Low-Rank EPI Ghost Correction.](https://onlinelibrary.wiley.com/doi/10.1002/mrm.28638)<br><em>Magnetic Resonance in Medicine 85:3404-3419, 2021.</em>
