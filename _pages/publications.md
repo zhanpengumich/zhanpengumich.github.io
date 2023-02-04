@@ -11,7 +11,7 @@ author_profile: true
 
 <b>Journal</b>
 ======
-* D. Kim, J. Coll-Font, <b>R. A. Lobos</b>, D. Stab, J. Pang, A. Foster, T. Garrett, X. Bi, P. Speier, J. P. Haldar, C. Nguyen.  <br>[Single breath-hold CINE imaging with combined Simultaneous Multi-Slice (SMS) and Region-Optimized Virtual (ROVir) coils](https://ralobos.github.io)<br><em> Magnetic Resonance in Medicine  <i>(In press)</i> , 2023.</em>
+* D. Kim, J. Coll-Font, <b>R. A. Lobos</b>, D. Stab, J. Pang, A. Foster, T. Garrett, X. Bi, P. Speier, J. P. Haldar, C. Nguyen.  <br>[Single breath-hold CINE imaging with combined Simultaneous Multi-Slice (SMS) and Region-Optimized Virtual (ROVir) coils](https://ralobos.github.io)<br><em> Magnetic Resonance in Medicine (In press), 2023.</em>
 * G. Ramos-Llorden, <b>R. A. Lobos</b>, T. H. Kim, Q. Tian, T. Witzel, H.-H. Lee, A. Scholz, B. Keil, A. Yendiki, B. Bilgic, J. P. Haldar, S. Y. Huang. <br>[High-fidelity, high-spatial-resolution diffusion MRI of the ex vivo whole human brain at ultra-high gradient strength with structured low-rank EPI ghost correction](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/nbm.4831)<br><em> NMR in Biomedicine 36:e4831, 2023.</em>
 * <b>R. A. Lobos</b>, J. P. Haldar. <br>[On the Shape of Convolution Kernels in MRI Reconstruction:  Rectangles versus Ellipsoids](https://onlinelibrary.wiley.com/doi/epdf/10.1002/mrm.29189)<br><em> Magnetic Resonance in Medicine 87:2989-2996, 2022.</em>
 * <b>R. A. Lobos</b>, M. U. Ghani, W. C. Karl, R. M. Leahy, J. P. Haldar. <br>[Autoregression and Structured Low-Rank Modeling of Sinogram Neighborhoods.](https://ieeexplore.ieee.org/document/9547841)<br><em>IEEE Transactions on Computational Imaging 6:1044-1054, 2021.</em>
