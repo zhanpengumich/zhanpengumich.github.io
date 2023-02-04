@@ -9,6 +9,7 @@ author_profile: true
 
 <b>At University of Southern California</b>
 ======
+* Teaching Assistant: (EE141) <em>Applied Linear Algebra for Engineering </em>, Fall 2022.<br> 
 * Teaching Assistant: (EE588) <em>Optimization for the Information and Data Sciences</em>, Fall 2021.<br> 
 * Teaching Assistant: (EE503) <em>Probability for Electrical and Computer Engineers</em>, Spring 2021.<br> 
 * Teaching Assistant: (EE141) <em>Applied Linear Algebra for Engineering </em>, Fall 2020.<br> 
