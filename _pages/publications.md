@@ -9,6 +9,10 @@ author_profile: true
   
 {% include base_path %}
 
+<b>Preprints</b>
+======
+*  <b>R. A. Lobos</b>, C.-C. Chan, J. P. Haldar.  <br>[New Theory and Faster Computations for Subspace-Based Sensitivity Map Estimation in Multichannel MRI](https://arxiv.org/abs/2302.13431)<br><em> arXiv:2302.13431. (Extended preprint).</em>
+
 <b>Journal</b>
 ======
 * D. Kim, J. Coll-Font, <b>R. A. Lobos</b>, D. Stab, J. Pang, A. Foster, T. Garrett, X. Bi, P. Speier, J. P. Haldar, C. Nguyen.  <br>[Single breath-hold CINE imaging with combined Simultaneous Multi-Slice (SMS) and Region-Optimized Virtual (ROVir) coils](https://ralobos.github.io)<br><em> Magnetic Resonance in Medicine, 2023. (In press).</em>
