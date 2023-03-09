@@ -11,11 +11,15 @@ author_profile: true
 
 <b>Preprints</b>
 ======
-*  <b>R. A. Lobos</b>, C.-C. Chan, J. P. Haldar.  <br>[New Theory and Faster Computations for Subspace-Based Sensitivity Map Estimation in Multichannel MRI](https://arxiv.org/abs/2302.13431)<br><em> arXiv:2302.13431. (Extended preprint).</em>
+*  <b>R. A. Lobos</b>, C.-C. Chan, J. P. Haldar.  <br>[New Theory and Faster Computations for Subspace-Based Sensitivity Map Estimation in Multichannel MRI](https://arxiv.org/abs/2302.13431)<br><em> arXiv:2302.13431. (Extended preprint).</em> <br>[Related software.](https://mr.usc.edu/download/pisco/)<br>
+
+<b>Technical Reports</b>
+======
+* <b>R. A. Lobos</b>, C.-C. Chan, J. P. Haldar  <br>[PISCO Software Version 1.0](https://sipi.usc.edu/reports/abstracts.php?rid=sipi-458)<br><em> University of Southern California, Los Angeles, CA, Technical Report USC-SIPI-458, March 2023.</em><br>[Related software.](https://mr.usc.edu/download/pisco/)<br>
 
 <b>Journal</b>
 ======
-* D. Kim, J. Coll-Font, <b>R. A. Lobos</b>, D. Stab, J. Pang, A. Foster, T. Garrett, X. Bi, P. Speier, J. P. Haldar, C. Nguyen.  <br>[Single breath-hold CINE imaging with combined Simultaneous Multi-Slice (SMS) and Region-Optimized Virtual (ROVir) coils](https://ralobos.github.io)<br><em> Magnetic Resonance in Medicine, 2023. (In press).</em>
+* D. Kim, J. Coll-Font, <b>R. A. Lobos</b>, D. Stab, J. Pang, A. Foster, T. Garrett, X. Bi, P. Speier, J. P. Haldar, C. Nguyen.  <br>[Single breath-hold CINE imaging with combined Simultaneous Multi-Slice (SMS) and Region-Optimized Virtual (ROVir) coils](https://onlinelibrary.wiley.com/doi/10.1002/mrm.29620)<br><em> Magnetic Resonance in Medicine, 2023. (In press).</em>
 * G. Ramos-Llorden, <b>R. A. Lobos</b>, T. H. Kim, Q. Tian, T. Witzel, H.-H. Lee, A. Scholz, B. Keil, A. Yendiki, B. Bilgic, J. P. Haldar, S. Y. Huang. <br>[High-fidelity, high-spatial-resolution diffusion MRI of the ex vivo whole human brain at ultra-high gradient strength with structured low-rank EPI ghost correction](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/nbm.4831)<br><em> NMR in Biomedicine 36:e4831, 2023.</em>
 * <b>R. A. Lobos</b>, J. P. Haldar. <br>[On the Shape of Convolution Kernels in MRI Reconstruction:  Rectangles versus Ellipsoids](https://onlinelibrary.wiley.com/doi/epdf/10.1002/mrm.29189)<br><em> Magnetic Resonance in Medicine 87:2989-2996, 2022.</em>
 * <b>R. A. Lobos</b>, M. U. Ghani, W. C. Karl, R. M. Leahy, J. P. Haldar. <br>[Autoregression and Structured Low-Rank Modeling of Sinogram Neighborhoods.](https://ieeexplore.ieee.org/document/9547841)<br><em>IEEE Transactions on Computational Imaging 6:1044-1054, 2021.</em>
