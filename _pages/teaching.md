@@ -7,6 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+<b>At University of Michigan</b>
+======
+* Lecturer: (ECE551) <em>Matrix Methods for Signal Processing, Data Analysis and Machine Learning </em>, Fall 2024.<br> 
+
 <b>At University of Southern California</b>
 ======
 * Teaching Assistant: (EE141) <em>Applied Linear Algebra for Engineering </em>, Fall 2022.<br> 
