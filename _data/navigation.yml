@@ -7,7 +7,10 @@ main:
     #url: /talks/    
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/ 
+
+  - title: "ECE551"
+    url: /ECE551_lectures/ 
     
   #- title: "Portfolio"
     #url: /portfolio/
