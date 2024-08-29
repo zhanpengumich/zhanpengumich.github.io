@@ -11,4 +11,4 @@ author_profile: true
 <b>Evolving lecture-by-lecture topics</b>
 ======
 
-* Class 0: TBA
+* Lecture 1: Fields - Vector spaces - Linear operators and matrix representation.
