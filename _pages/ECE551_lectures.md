@@ -11,4 +11,4 @@ author_profile: true
 <b>Evolving lecture-by-lecture topics</b>
 ======
 
-* Lecture 1: Fields - Vector spaces - Linear operators and matrix representation.
+* Lecture 1: Fields - Vector spaces - Linear operators and matrix representation (book Chapter 1).
