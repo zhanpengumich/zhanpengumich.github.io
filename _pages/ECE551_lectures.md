@@ -12,3 +12,4 @@ author_profile: true
 ======
 
 * Lecture 1: Fields - Vector spaces - Linear operators and matrix representation (book Chapter 1).
+* Lecture 2: Matrices (adjoint, linear-operator perspective) - Vector-vector multiplication (inner product and outer product) (book Chapter 2).
