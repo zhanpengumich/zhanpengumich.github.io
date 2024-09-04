@@ -11,6 +11,6 @@ author_profile: true
 <b>Evolving lecture-by-lecture topics</b>
 ======
 
-* Lecture 1 (08/27/2024): Fields; Vector spaces; Linear operators and matrix representation (book Chapter 1).
-* Lecture 2 (08/29/2024): Matrices (adjoint, linear-operator perspective); Vector-vector multiplication (inner product and outer product) (book Chapter 2).
-* Lecture 3 (09/03/2024): Matrix-matrix multiplication; Invertibility; Orthogonality; Orthogonal matrices (book Chapter 2) 
+* Lecture 1 (Aug. 27th, 2024): Fields; Vector spaces; Linear operators and matrix representation (book Chapter 1).
+* Lecture 2 (Aug. 29th, 2024): Matrices (adjoint, linear-operator perspective); Vector-vector multiplication (inner product and outer product) (book Chapter 2).
+* Lecture 3 (Sept. 3rd, 2024): Matrix-matrix multiplication; Invertibility; Orthogonality; Orthogonal matrices (book Chapter 2) 
