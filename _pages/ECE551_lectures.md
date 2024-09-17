@@ -16,4 +16,5 @@ author_profile: true
 * Lecture 3 (Sept. 3rd, 2024): Matrix-matrix multiplication; Invertibility; Orthogonality; Orthogonal/Unitary matrices (book Chapter 2)
 * Lecture 4 (Sept. 6th, 2024): Determinant; Eigenvalues; Eigenvectors (book Chapter 2 and 3)
 * Lecture 5 (Sept. 10th, 2024): Unitary eigendecomposition; Normal matrices; SVD (definition) (book Chapter 3)
-* Lecture 6 (Sept. 12th, 2024): Relationships between eigendecomposition and SVD; non-uniqueness of SVD  (book Chapter 3) 
+* Lecture 6 (Sept. 12th, 2024): Relationships between eigendecomposition and SVD; non-uniqueness of SVD  (book Chapter 3)
+* Lecture 7 (Sept. 17th, 2024): Subspaces; Linear Independency; Bases; Dimension  (book Chapter 4) 
