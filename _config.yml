@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Rodrigo A. Lobos"
+title                    : "Zhanpeng Xu's Personal Website"
 title_separator          : "-"
-name                     : &name "Rodrigo A. Lobos"
+name                     : &name "Zhanpeng Xu"
 description              : &description "personal description"
 url                      : https://ralobos.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
