@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Rodrigo A. Lobos"
-  avatar           : "pic_rl_scaled579.jpg"
-  bio              : "Postdoctoral Researcher at University of Michigan <b>rlobos@umich.edu </b>"
+  name             : "Zhanpeng Xu"
+  avatar           : "drone1.jpg"
+  bio              : "PhD Candidate at University of Michigan <b>rlobos@umich.edu </b>"
   location         : "Ann Arbor, MI"
   employer         :
   pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=J7WSE60AAAAJ&hl=en&oi=ao"
-  email            : #"rlobos@usc.edu"
+  googlescholar    : "https://scholar.google.com/citations?user=RRTTCJEAAAAJ&hl=en&authuser=1"
+  email            : #"zhanpeng@umich.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
