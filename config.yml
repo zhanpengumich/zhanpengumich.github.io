@@ -1,5 +1,5 @@
 baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+title: Zhanpeng
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -12,13 +12,13 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
+        - name: Projects
           url: books/
           weight: 5 
-        - name: Papers
+        - name: Publications
           url: papers/
           weight: 2
-        - name: Courses
+        - name: Presentations
           url: courses/
           weight: 3
         - name: Data
