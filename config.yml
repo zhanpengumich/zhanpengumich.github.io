@@ -1,5 +1,5 @@
-baseURL: "" 
-title: Zhanpeng
+baseURL: "https://zhanpengumich.github.io/"
+title: Zhanpeng Xu's Personal Website
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -13,10 +13,10 @@ taxonomies:
 menu:
     main:
         - name: Projects
-          url: books/
+          url: Projects/
           weight: 5 
         - name: Publications
-          url: papers/
+          url: Publications/
           weight: 2
         - name: Presentations
           url: courses/
