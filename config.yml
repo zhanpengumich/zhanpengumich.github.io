@@ -28,23 +28,7 @@ menu:
           url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
           weight: 6
           - identifier: papers
-      name: Papers
-      url: /papers/
-      weight: 1
-    - identifier: data
-      name: Data
-      url: /data/
-      weight: 2
-    # --- 下面是新添加的社交图标链接 ---
-    - identifier: github
-      name: "GitHub"  # 如果你想更像图标，可以尝试写 Emoji，比如 "GitHub ↗"
-      url: https://github.com/你的用户名
-      weight: 10      # 数字大一点，它们就会排在最右边
-    - identifier: email
-      name: "Email"
-      url: "mailto:你的邮箱@example.com"
-      weight: 11
-
+      
 params:
     description: "Zhanpeng's ."
     author: Moritz-Maria von Igelfeld
