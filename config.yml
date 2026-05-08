@@ -14,7 +14,7 @@ menu:
     main:
         - name: Projects
           url: Projects/
-          weight: 5 
+          weight: 1 
         - name: Publications
           url: Publications/
           weight: 2
@@ -24,7 +24,7 @@ menu:
         - name: Data
           url: data/
           weight: 4 
-        - name: Blog
+        - name: ？？？
           url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
           weight: 6
 
