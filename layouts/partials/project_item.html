@@ -1,0 +1,84 @@
+{{- /* 首页 Projects 条目：左视频(或图片) + 右栏（标题、作者/会议、描述、链接）
+       支持三种媒体方式（择一）：
+         video       : 本目录里的视频文件名或远程 mp4 直链
+         video_embed : YouTube / Vimeo 等 iframe 嵌入链接
+         image       : 当无视频时作为封面图；有视频时作为 poster
+*/ -}}
+<article class="proj-item">
+  <div class="proj-media">
+    {{- $video := .Params.video -}}
+    {{- $videoEmbed := .Params.video_embed -}}
+    {{- $poster := "" -}}
+    {{- with .Params.image -}}
+      {{- $posterRes := $.Resources.GetMatch . -}}
+      {{- if $posterRes -}}
+        {{- $poster = $posterRes.RelPermalink -}}
+      {{- else -}}
+        {{- $poster = . | relURL -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if $videoEmbed }}
+    <div class="proj-video-embed">
+      <iframe src="{{ $videoEmbed }}" title="{{ .Title }}"
+        loading="lazy" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    {{- else if $video }}
+      {{- $videoSrc := "" -}}
+      {{- $videoRes := $.Resources.GetMatch $video -}}
+      {{- if $videoRes -}}
+        {{- $videoSrc = $videoRes.RelPermalink -}}
+      {{- else -}}
+        {{- $videoSrc = $video | relURL -}}
+      {{- end -}}
+    <video class="proj-video"
+      {{- with $poster }} poster="{{ . }}"{{ end }}
+      autoplay muted loop playsinline preload="metadata">
+      <source src="{{ $videoSrc }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    {{- else if $poster }}
+    <img class="proj-image" src="{{ $poster }}"
+      alt="{{ .Params.image_alt | default .Title }}"
+      loading="lazy" decoding="async">
+    {{- end }}
+  </div>
+  <div class="proj-body">
+    <div class="proj-meta">
+      <div class="proj-title proj-block">
+        {{- $titleURL := .Params.title_url | default .Permalink }}
+        <a href="{{ $titleURL }}"{{ if or (hasPrefix $titleURL "http") .Params.title_url }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a>
+      </div>
+      {{- with .Params.authors }}
+      <div class="proj-authors proj-block">
+        {{- $authors := cond (reflect.IsSlice .) (delimit . ", ") . -}}
+        {{- $authors | markdownify | replaceRE "</?p>" "" | safeHTML -}}
+      </div>
+      {{- end }}
+      {{- $venue := .Params.venue -}}
+      {{- $year := .Params.year -}}
+      {{- if or $venue $year }}
+      <div class="proj-venue proj-block">
+        {{- $venueLine := "" -}}
+        {{- with $venue }}{{ $venueLine = . }}{{ end -}}
+        {{- if and $venue $year }}{{ $venueLine = printf "%s %v" $venueLine $year }}{{ else if $year }}{{ $venueLine = printf "%v" $year }}{{ end -}}
+        {{- $venueLine | markdownify | replaceRE "</?p>" "" | safeHTML -}}
+      </div>
+      {{- end }}
+      {{- with .Params.description }}
+      <div class="proj-desc proj-block">
+        {{- . | markdownify -}}
+      </div>
+      {{- end }}
+    </div>
+    {{- with .Params.links }}
+    <p class="proj-links">
+      {{- range $i, $link := . }}
+        {{- if $i }}<span class="proj-sep" aria-hidden="true"> | </span>{{ end -}}
+        <a href="{{ $link.url }}"{{ if hasPrefix $link.url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $link.label }}</a>
+      {{- end }}
+    </p>
+    {{- end }}
+  </div>
+</article>

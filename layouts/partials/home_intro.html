@@ -1,0 +1,35 @@
+{{- $intro := site.Params.homeIntro }}
+{{- with $intro }}
+<section id="about" class="home-section home-intro" aria-label="About" tabindex="-1">
+  <div class="home-intro-inner">
+    <div class="home-intro-photo-col">
+      <figure class="home-intro-photo">
+        {{- if $intro.image }}
+        <img src="{{ $intro.image | relURL }}" alt="{{ $intro.imageAlt | default "Profile photo" }}" width="{{ $intro.imageWidth | default 220 }}" loading="eager" decoding="async">
+        {{- else }}
+        <div class="home-intro-photo-placeholder" role="img" aria-label="Profile photo placeholder">Your photo</div>
+        {{- end }}
+      </figure>
+      {{- with $intro.links }}
+      <nav class="home-intro-links" aria-label="Contact links">
+        {{- range $i, $link := . }}
+        {{- if $i }}<span class="home-intro-links-sep" aria-hidden="true">·</span>{{ end }}
+        <a href="{{ $link.url }}"{{ if hasPrefix $link.url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $link.label }}</a>
+        {{- end }}
+      </nav>
+      {{- end }}
+    </div>
+    <div class="home-intro-text">
+      {{- with $intro.name }}
+      <h1 class="home-intro-name">{{ . }}</h1>
+      {{- end }}
+      {{- with $intro.subtitle }}
+      <p class="home-intro-subtitle">{{ . }}</p>
+      {{- end }}
+      {{- with $intro.content }}
+      <div class="home-intro-body post-content">{{ . | markdownify }}</div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}

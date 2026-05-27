@@ -1,0 +1,135 @@
+{{- /* 首页 featured 下方：顺序与 config menu.main 中五项一致 */ -}}
+{{- $projects := sort (where site.RegularPages "Section" "projects") "Date" "desc" -}}
+{{- $papers := sort (where site.RegularPages "Section" "papers") "Date" "desc" -}}
+{{- $courses := sort (where site.RegularPages "Section" "courses") "Date" "desc" -}}
+{{- $awards := sort (where site.RegularPages "Section" "awards") "Date" "desc" -}}
+{{- $services := sort (where site.RegularPages "Section" "services") "Date" "desc" -}}
+
+<section id="projects" class="home-section post-content" tabindex="-1">
+  <hr>
+  <h2 id="projects-heading">Projects</h2>
+  {{- if $projects }}
+  <div class="proj-list">
+    {{- range $projects }}
+    {{ partial "project_item.html" . }}
+    {{- end }}
+  </div>
+  {{- else }}
+  {{- with site.Params.homeProjectsNote }}
+  <div class="home-section-note">{{ . | markdownify }}</div>
+  {{- else }}
+  <p class="home-section-empty">在 <code>content/projects/</code> 下添加页面后，将自动显示在此处。</p>
+  {{- end }}
+  {{- end }}
+</section>
+
+<section id="papers" class="home-section post-content" tabindex="-1">
+  <hr>
+  <h2 id="papers-heading">Publications</h2>
+  {{- if site.Params.homePublicationsNote }}
+  <div class="home-section-note home-publications-list">
+    {{- $pubNum := newScratch }}
+    {{- $pubNum.Set "n" 0 }}
+    {{- range split site.Params.homePublicationsNote "\n\n" }}
+      {{- $block := strings.TrimSpace . }}
+      {{- $block = replaceRE `(?m)^\d+\.\s*` "" $block }}
+      {{- if $block }}
+        {{- $isPaper := findRE `\*\*\*` $block -}}
+        {{- if $isPaper }}
+          {{- $pubNum.Add "n" 1 }}
+          {{- $highlight := or (findRE `^\*\*Z Xu\+?\*\*,` $block) (findRE `\*\*Z Xu\+\*\*,` $block) -}}
+          <p class="pres-line{{ if $highlight }} pres-first-author{{ end }}"><span class="pres-num">{{ $pubNum.Get "n" }}.</span> {{ replaceRE `\s*\n\s*` " " $block | markdownify }}</p>
+        {{- else }}
+          <p class="pres-line pres-intro">{{ replaceRE `\s*\n\s*` " " $block | markdownify }}</p>
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  </div>
+  {{- else if $papers }}
+  <div class="pub-list">
+    {{- range $papers }}
+    {{ partial "publication_item.html" . }}
+    {{- end }}
+  </div>
+  {{- else }}
+  <p class="home-section-empty">在 <code>config.yml</code> 设置 <code>homePublicationsNote</code>，或在 <code>content/papers/</code> 添加页面。</p>
+  {{- end }}
+</section>
+
+<section id="presentations" class="home-section post-content" tabindex="-1">
+  <hr>
+  <h2 id="presentations-heading">Presentations (as the main presenter)</h2>
+  {{- if site.Params.homePresentationsNote }}
+  <div class="home-section-note home-presentations-lines">
+    {{- $presNum := newScratch }}
+    {{- $presNum.Set "n" 0 }}
+    {{- range split site.Params.homePresentationsNote "\n" }}
+      {{- $line := strings.TrimSpace . }}
+      {{- $line = replaceRE `^\d+\.\s*` "" $line 1 }}
+      {{- if $line }}
+        {{- $presNum.Add "n" 1 }}
+        <p class="pres-line"><span class="pres-num">{{ $presNum.Get "n" }}.</span> {{ $line | markdownify }}</p>
+      {{- end }}
+    {{- end }}
+  </div>
+  {{- else if $courses }}
+  <ul class="home-section-list">
+    {{- range $courses }}
+    <li>
+      <p><strong><a href="{{ .Permalink }}">{{ .Title }}</a></strong></p>
+      {{- if ne (.Param "hideSummary") true }}
+      <p>{{ .Summary | plainify | htmlUnescape | truncate 320 }}{{ if .Truncated }}…{{ end }}</p>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <p class="home-section-empty">暂无 presentations（<code>content/courses/</code>）或请在 <code>config.yml</code> 中设置 <code>homePresentationsNote</code>。</p>
+  {{- end }}
+</section>
+
+<section id="awards" class="home-section post-content" tabindex="-1">
+  <hr>
+  <h2 id="awards-heading">Awards</h2>
+  {{- if $awards }}
+  <ul class="home-section-list">
+    {{- range $awards }}
+    <li>
+      <p><strong><a href="{{ .Permalink }}">{{ .Title }}</a></strong></p>
+      {{- if ne (.Param "hideSummary") true }}
+      <p>{{ .Summary | plainify | htmlUnescape | truncate 320 }}{{ if .Truncated }}…{{ end }}</p>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  {{- with site.Params.homeAwardsNote }}
+  <div class="home-section-note">{{ . | markdownify }}</div>
+  {{- else }}
+  <p class="home-section-empty">在 <code>content/awards/</code> 下添加页面后，将自动显示在此处。</p>
+  {{- end }}
+  {{- end }}
+</section>
+
+<section id="services" class="home-section post-content" tabindex="-1">
+  <hr>
+  <h2 id="services-heading">Services</h2>
+  {{- if $services }}
+  <ul class="home-section-list">
+    {{- range $services }}
+    <li>
+      <p><strong><a href="{{ .Permalink }}">{{ .Title }}</a></strong></p>
+      {{- if ne (.Param "hideSummary") true }}
+      <p>{{ .Summary | plainify | htmlUnescape | truncate 320 }}{{ if .Truncated }}…{{ end }}</p>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  {{- with site.Params.homeServicesNote }}
+  <div class="home-section-note">{{ . | markdownify }}</div>
+  {{- else }}
+  <p class="home-section-empty">在 <code>content/services/</code> 下添加页面后，将自动显示在此处。</p>
+  {{- end }}
+  {{- end }}
+</section>

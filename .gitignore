@@ -2,3 +2,7 @@
 public/
 resources/
 .hugo_build.lock
+
+# macOS metadata
+.DS_Store
+**/.DS_Store

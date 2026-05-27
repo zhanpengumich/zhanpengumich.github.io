@@ -1,5 +1,6 @@
 baseURL: "https://zhanpengumich.github.io/"
 title: Zhanpeng Xu's Personal Website
+copyright: "Copyright Zhanpeng Xu 2026. Last updated: 2026-05-15"
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -12,26 +13,54 @@ taxonomies:
 
 menu:
     main:
+        # 站内栏目使用 /#锚点：在首页同一页滚动到对应区块（见 layouts/partials/home_sections.html）
         - name: Projects
-          url: Projects/
-          weight: 1 
+          url: /#projects
+          weight: 1
         - name: Publications
-          url: Publications/
+          url: /#papers
           weight: 2
         - name: Presentations
-          url: courses/
+          url: /#presentations
           weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
-        - name: ？？？
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
-          - identifier: papers
+        - name: Awards
+          url: /#awards
+          weight: 4
+        - name: Services
+          url: /#services
+          weight: 5
+       
       
+ 
+    
+
 params:
+    # 主页顶部：照片 + 自我介绍（编辑 image / name / content；不需要可整段删掉 homeIntro）
+    homeIntro:
+        image: "/picture.jpeg"
+        imageAlt: "Zhanpeng Xu"
+        imageWidth: 220
+        name: "Zhanpeng Xu, Ph.D."
+        links:
+            - label: Email
+              url: "mailto:zhanpeng@umich.edu"
+            - label: LinkedIn
+              url: "https://www.linkedin.com/in/zhanpeng-xu-816a36278/"
+            - label: Google Scholar
+              url: "https://scholar.google.com/citations?user=RRTTCJEAAAAJ&hl=en&authuser=1"
+        content: |
+            I’m a system engineer and researcher working at the intersection of advanced optical imaging, perception systems, and physical AI. Currently at [Tensor Auto](https://tensor.auto), I work on building camera perception and ADAS systems for the first personal robocar across autonomy levels L0-L4.
+
+            I received my Ph.D. in Biomedical Engineering from the University of Michigan in 2025, where I developed a multimodal in vivo imaging system integrating photoacoustic microscopy, optical coherence tomography, and fluorescence microscopy. The platform enabled high-resolution structural, functional, and molecular imaging for applications including early cancer detection, drug-delivery monitoring, and ophthalmic disease studies.
+            
+
+            Previously, I earned the M.S. in Optical Engineering from Zhejiang University in 2021, where I built a high-precision 3D metrology system based on light-sheet microscopy for quality inspection of industrial samples, and a hyperspectral imager for environmental and remote sensing. I also earned dual B.S. degrees in Optoelectronic Science and Engineering and Financial Engineering from Sichuan University in 2018.
+
+            My long-term passion lies in developing intelligent imaging and perception systems that empower physical AI, from advanced vision solution to artificial gneral intelligence (AGI) product operating in physical world. I welcome meaningful discussion and potential collaboration, feel free to contact me via [zhanpeng@umich.edu](mailto:zhanpeng@umich.edu), or DM me on [LinkedIn](https://www.linkedin.com/in/zhanpeng-xu-816a36278/).
+    # 设为某篇文章的路径则主页 featured 区显示该篇；删除则只显示 homeIntro + 下方各栏目
+    # homePaper: "/papers/paper-example"
     description: "Zhanpeng's ."
-    author: Moritz-Maria von Igelfeld
+    author: "Zhanpeng Xu"
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -76,39 +105,157 @@ params:
             - name: Blog
               url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
-    socialIcons:
-        - name: CV
-          url: cv.pdf
-        - name: Email
-          url: mailto:user@gmail.com
-        - name: Zoom
-          url: https://www.zoom.us/my/user
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=user
-        - name: GitHub
-          url: https://github.com/user
-        - name: YouTube
-          url: https://www.youtube.com/@user
-        - name: Substack
-          url: https://user.substack.com
-        - name: Twitter
-          url: https://x.com/user
-        - name: Bluesky
-          url: https://bsky.app/profile/user.bsky.social
 
+
+    # Publications：每篇可写多行（作者/标题/期刊），显示为一段不换行；篇与篇之间空一行，编号自动生成
+    # 不含 ***期刊名*** 的段落（如开头说明、Google Scholar）→ 不编号
+    # 黄底高亮：**Z Xu**, 或 **Z Xu+**, 开头（第一/共同第一作者），或作者行含 **Z Xu+**,
+    homePublicationsNote: |
+      First author paper are <span class="pres-intro-highlight">highlighted</span>. To view the full list of publications, please refer my [Google Scholar](https://scholar.google.com/citations?user=RRTTCJEAAAAJ&hl=en&authuser=1).
+
+
+      Y Huang, I Oraiqat, D Litzenberg, M Karthikesh, C Tichacek, G Gonzalez, **Z Xu**, S Dykstra, B Li, S Hadley, E Moros, M Zhang, P Carson, K Cuneo, X Wang*, I Naqa*, W Zhang*.
+      [Ionizing radiation acoustic and ultrasound dual-modality imaging for visualization of dose on anatomical structures during radiotherapy](https://doi.org/10.1016/j.pacs.2025.100742)
+      ***Photoacoustics*** 100742, (2025)
+
+      J Qiu, G Karageorgos, X Peng, S Ghose, Z Yang, A Dentinger, **Z Xu**, J Jo, S Ragupathi, G Xu, N Abdulaziz, G Gandikota, X Wang*, D Mills*.
+      [SwinDAF3D: Pyramid Swin Transformers with Deep Attentive Features for Automated Finger Joint Segmentation in 3D Ultrasound Images for Rheumatoid Arthritis Assessment](https://doi.org/10.3390/bioengineering12040390)
+      ***Bioengineering*** 12 (4), 390, (2025)
+
+      G Karageorgos, J Qiu, X Peng, Z Yang, S Ghose, A Dentinger, **Z Xu**, J Jo, S Ragupathi, G Xu, N Abdulaziz, G Gandikota, X Wang*, D Mills*.
+      [Automated Deep Learning-Based Finger Joint Segmentation in 3-D Ultrasound Images With Limited Dataset](https://doi.org/10.1177/01617346241277178)
+      ***Ultrasonic Imaging*** 47 (1), 14-23, (2025)
+
+      **Z Xu**, G Escalona, I Schrack, W Zhang, T Zhai, LD Shea*, X Wang*.
+      [Detecting metastatic potential of cancer through longitudinal vasculature imaging of biomaterial scaffold using non-invasive in vivo photoacoustic microscopy and optical coherence tomography](https://doi.org/10.7150/thno.101685)
+      ***Theranostics*** 15 (2), 509-520, (2025)
+
+      **Z Xu**, W Zhang, C Quesada, X Wang*, M Fabiilli*.
+      [Longitudinal Monitoring of Angiogenesis in a Murine Window Chamber Model In Vivo](https://doi.org/10.1089/ten.tec.2023.0289)
+      ***Tissue Engineering Part C: Methods*** 30 (3), 93-101, (2024)
+
+      **Z Xu**, CS Locke, R Morris, DA Jamison, KM Kozloff*, X Wang*.
+      [Development of a semi-anthropomorphic photoacoustic calcaneus phantom based on nano computed tomography and stereolithography 3D printing](https://doi.org/10.1002/jor.25702)
+      ***Journal of Orthopaedic Research*** 42 (3), 647-660, (2024)
+
+      X Peng, A Dentinger, S Kewalramani, **Z Xu**, S Gray, S Ghose, Y Tan, Z Yang, J Jo, D Chamberland, G Xu, N Abdulaziz, G Gandikota, D Mills*, X Wang*.
+      [An Automatic 3-D Ultrasound and Photoacoustic Combined Imaging System for Human Inflammatory Arthritis](https://doi.org/10.1109/tuffc.2023.3290824)
+      ***IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control*** 70 (12), 1691-1702, (2023)
+
+      X Peng, **Z Xu**, A Dentinger, S Kewalramani, J Jo, G Xu, D Chamberland, N Abdulaziz, G Gandikota, D Mills*, X Wang*.
+      [Longitudinal volumetric assessment of inflammatory arthritis via photoacoustic imaging and Doppler ultrasound imaging](https://doi.org/10.1016/j.pacs.2023.100514)
+      ***Photoacoustics*** 31, 100514, (2023)
+
+      S Li, C Jiao, **Z Xu**, Y Wu, E Forsberg, X Peng*, S He*.
+      [Determination of geographic origins and types of Lindera aggregata samples using a portable short-wave infrared hyperspectral imager](https://doi.org/10.1016/j.saa.2022.121370)
+      ***Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy*** 279, 121370, (2022)
+
+      H Zhang, J Luo, S Hou, **Z Xu**, J Evans, S He*.
+      [Incoherent broadband cavity-enhanced absorption spectroscopy for sensitive measurement of nutrients and microalgae](https://doi.org/10.1364/ao.449467)
+      ***Applied Optics*** 61 (12), 3400-3408, (2022)
+
+      C Jiao+, **Z Xu+**, Q Bian, E Forsberg, Q Tan, X Peng, S He*.
+      [Machine learning classification of origins and varieties of Tetrastigma hemsleyanum using a dual-mode microscopic hyperspectral imager](https://doi.org/10.1016/j.saa.2021.120054)
+      ***Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy*** 261, 120054, (2021)
+
+      J Luo, H Zhang, E Forsberg, S Hou, S Li, **Z Xu**, X Chen, X Sun, S He*.
+      [Confocal hyperspectral microscopic imager for the detection and classification of individual microalgae](https://doi.org/10.1364/oe.438253)
+      ***Optics Express*** 29 (23), 37281-37301, (2021)
+
+      S He*, S Li, X Chen, **Z Xu**, Q Bian, J Luo, L Luo.
+      [Application of hyperspectral imager and lidar in marine biological detection](https://doi.org/10.3788/irla20211033)
+      ***Infrared and Laser Engineering*** 50 (6), 20211033-1-20211033-21, (2021)
+
+      J Du, X Hong, Y Wang, **Z Xu**, W Zhao, N Lv, C Fei, S He*.
+      [A comprehensive performance comparison of DFT-S DMT and QAM-DMT in UOWC system in different water environments](https://doi.org/10.1109/jphot.2020.3044905)
+      ***IEEE Photonics Journal*** 13 (1), 1-11, (2020)
+
+      **Z Xu**, Y Jiang, J Ji, E Forsberg, Y Li, S He*.
+      [Classification, identification, and growth stage estimation of microalgae based on transmission hyperspectral microscopic imaging and machine learning](https://doi.org/10.1364/oe.406036)
+      ***Optics Express*** 28 (21), 30686-30700, (2020)
+
+      S He*, X Chen, S Li, X Yao, **Z Xu**.
+      [Small hyperspectral imagers and lidars and their marine applications](https://doi.org/10.3788/irla202049.0203001)
+      ***Infrared and Laser Engineering*** 49 (2), 0203001, (2020)
+
+      **Z Xu**, Y Jiang, S He*.
+      [Multi-mode microscopic hyperspectral imager for the sensing of biological samples](https://doi.org/10.3390/app10144876)
+      ***Applied Sciences*** 10 (14), 4876, (2020)
+
+      **Z Xu**, E Forsberg, Y Guo, F Cai, S He*.
+      [Light-sheet microscopy for surface topography measurements and quantitative analysis](https://doi.org/10.3390/s20102842)
+      ***Sensors*** 20 (10), 2842, (2020)
+
+      L Luo, X Chen, **Z Xu**, S Li, Y Sun, S He*.
+      [A parameter-free calibration process for a Scheimpflug LIDAR for volumetric profiling](https://doi.org/10.2528/pier20120701)
+      ***Progress In Electromagnetics Research*** 169, 117-127, (2020)
+
+
+    # 每行一条；回车即下一条，编号自动生成（不必写 1. 2. 3.）
+    # 标题加链接（蓝色，点击新标签页打开）：[“论文标题”](https://presentation链接)
+    # 奖项等需红字加粗：用 <strong class="pres-highlight">(文字)</strong>
+    homePresentationsNote: |
+      [Oral] [“Longitudinal monitoring of tumor cell migration and angiogenesis in the biomaterial scaffold in vivo”](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC13319/PC1331905/Longitudinal-monitoring-of-tumor-cell-migration-and-angiogenesis-in-the/10.1117/12.3039933.short), Photons Plus Ultrasound: Imaging and Sensing 2025, PC1331905 (2025)      
+      [Oral] [“Longitudinal monitoring of controlled delivery of basic fibroblast growth factor (VEGF) and angiogenesis in acoustically responsive scaffolds”](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC13309/PC1330904/Longitudinal-monitoring-of-controlled-delivery-of-basic-fibroblast-growth-factor/10.1117/12.3040249.short), Multimodal Biomedical Imaging XX, PC1330904, (2025)
+      [Poster] "In vivo bone health assessment across a broad age range using photoacoustic and quantitative ultrasound (PAQUS)", Optical Diagnostics and Sensing XXVII: Toward Point-of-Care Diagnostics, 13309-7, (2025)
+      [Oral] [“Longitudinal intravital monitoring for angiogenesis in fibrin scaffolds using non-invasive in vivo photoacoustic microscopy and optical coherence tomography”](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC12842/PC128421O/Longitudinal-intravital-monitoring-for-angiogenesis-in-fibrin-scaffolds-using-non/10.1117/12.2692830.short), Photons Plus Ultrasound: Imaging and Sensing 2024, PC128421O, (2024)
+      [Oral] [“Assessment of bone health through a photoacoustic quantitative ultrasound (PAQUS) apparatus: a preliminary phantom and clinical study”](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/0/PC128421/Assessment-of-bone-health-through-a-photoacoustic-quantitative-ultrasound-PAQUS/10.1117/12.2692832.short), Photons Plus Ultrasound: Imaging and Sensing 2024, PC128421D, (2024)
+      [Oral] [“A 4D smart imaging system for topography and hyperspectral measurement via light-sheet illumination”](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC12890/PC128900D/A-4D-smart-imaging-system-for-topography-and-hyperspectral-measurement/10.1117/12.3003158.short), Smart Photonic and Optoelectronic Integrated Circuits 2024, PC128900D, (2024)
+      [Poster] [“Detecting metastatic potential of cancer through longitudinal vasculature imaging of biomaterial scaffold using non-invasive in vivo photoacoustic microscopy and OCT”](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC12842/PC128422A/Detecting-metastatic-potential-of-cancer-through-longitudinal-vasculature-imaging-of/10.1117/12.2692826.short), Photons Plus Ultrasound: Imaging and Sensing 2024, PC128422A (2024)
+      [Poster] ”Assessment of bone health through a photoacoustic quantitative ultrasound (PAQUS) apparatus: a preliminary phantom and clinical study“, ASBMR 2023 Annual Meeting, Vancouver, BC, Canada (2023)
+      [Poster] [“Development of a semi-anthropomorphic photoacoustic calcaneus phantom based on micro computed tomography and stereolithography 3D printing”](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC12379/PC123792S/Development-of-a-semi-anthropomorphic-photoacoustic-calcaneus-phantom-based-on/10.1117/12.2649315.short), Photons Plus Ultrasound: Imaging and Sensing 2023, PC123792S, (2023)
+      [Oral] “Multi-mode microscopic hyperspectral imager for the sensing of biological samples,” International Day of Light (IDL) Celebrating, Hangzhou, China, May 2020. <strong class="pres-highlight">(Outstanding Oral Presentation Award)</strong>
+      [Poster] “Transmission hyperspectral microscopic imager for the sensing and classification of microalgae,” 4th National Ocean Optics Summit Forum, Hangzhou, China, Oct. 2020. <strong class="pres-highlight">(Best Poster Award)</strong>
+
+
+
+
+    homeServicesNote: |
+      Served as independent reviewer for peer-review journals, including “Optics Letters, Optics Express, Biomedical Optics Express, Applied Optics, Spectrochimica Acta, Part A: Molecular and Biomolecular Spectroscopy (SAA), Progress In Electromagnetics Research (PIER), Journal of Pharmaceutical and Biomedical Analysis (JPBA), Algal Research, Quantitative Imaging in Medicine and Surgery (QIMS), Plos One, Scientific Reports, The Journal of the Optical Society of America B (JOSA-B), Journal of Fluorescence, Photonics, Electronics, Applied Sciences, Applied Computing and Informatics and Optics Continuum”. 
+          
+    homeAwardsNote: |
+      ◆ Glenn V. Edmonson Scholarship (Exceptional Research Recognition), University of Michigan, 2025 [[Media]](https://bme.umich.edu/2025/05/15/more-than-200-people-attend-bme-symposium-with-glenn-v-edmonson-lecture/)
+
+      ◆ Rosalind Franklin Society Award (Best 2024 Paper Recognition in “Tissue Engineering Part C: Methods”), 2025 [[Media]](https://journals.sagepub.com/doi/abs/10.1089/ten.tec.2023.0289.rfs2024) 
+
+      ◆ Rackham Conference Travel Grant, University of Michigan, 2025, 2024, 2023
+
+      ◆ Rackham Graduate Student Research Grant, University of Michigan, 2023
+
+      ◆ Gold Award, 8th China International College Students’ “Internet+” Innovation & Entrepreneurship Competition, 2022 [[Media]](https://mp.weixin.qq.com/s/iUFVbaJlU-WHAQg0luiPJg)
+
+      ◆ BME Fellowship, University of Michigan, 2021
+
+      ◆ National Scholarship for Graduate Students, 2020
+
+      ◆ Top Ten Student of College of Optical Science and Engineering, Zhejiang University, 2020
+
+      ◆ Outstanding Oral Presentation Award, International Day of Light (IDL) Celebrating Forum, 2020
+
+      ◆ Best Poster Award, 4th National Ocean Optics Summit Forum, 2020 [[Media]](https://e.csoe.org.cn/html/xhgg/gjjl/3310.html)  
+
+      ◆ Outstanding Graduate Leader Award, Zhejiang University, 2019
+
+      ◆ Graduating Summa Cum Laude, Sichuan University, 2018
+
+      ◆ First-class Scholarships, Sichuan University, 2017, 2016, 2015
+
+      ◆ Second Prize, National Undergraduate Electronic Design Contest, 2017
+
+      ◆ First Prize, “TI Cup” Undergraduate Electronic Design Contest, 2016
+
+      ◆ Third Prize, National Mathematic Contest, 2015
+
+
+    
     assets:
         disableScrollBarStyle: true
     cover:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
-      icon: favicon.ico
-      iconHeight: 18
+      text: "Zhanpeng Xu, Ph.D."
+    
 
 markup:
     goldmark:

@@ -1,0 +1,45 @@
+{{- /* 首页 Publications 条目：左图 + 右栏（标题、作者、会议、链接） */ -}}
+<article class="pub-item">
+  {{- with .Params.image }}
+  <div class="pub-thumb">
+    {{- $img := $.Resources.GetMatch . }}
+    {{- if $img }}
+    <img src="{{ $img.RelPermalink }}" alt="{{ $.Params.image_alt | default $.Title }}" loading="lazy" decoding="async">
+    {{- else }}
+    <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default $.Title }}" loading="lazy" decoding="async">
+    {{- end }}
+  </div>
+  {{- end }}
+  <div class="pub-body">
+    <div class="pub-meta">
+      <div class="pub-title pub-block">
+        {{- $titleURL := .Params.title_url | default .Permalink }}
+        <a href="{{ $titleURL }}"{{ if or (hasPrefix $titleURL "http") .Params.title_url }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a>
+      </div>
+      {{- with .Params.authors }}
+      <div class="pub-authors pub-block">
+        {{- $authors := cond (reflect.IsSlice .) (delimit . ", ") . -}}
+        {{- $authors | markdownify | replaceRE "</?p>" "" | safeHTML -}}
+      </div>
+      {{- end }}
+      {{- $venue := .Params.venue -}}
+      {{- $year := .Params.year -}}
+      {{- if or $venue $year }}
+      <div class="pub-venue pub-block">
+        {{- $venueLine := "" -}}
+        {{- with $venue }}{{ $venueLine = . }}{{ end -}}
+        {{- if and $venue $year }}{{ $venueLine = printf "%s %v" $venueLine $year }}{{ else if $year }}{{ $venueLine = printf "%v" $year }}{{ end -}}
+        {{- $venueLine | markdownify | replaceRE "</?p>" "" | safeHTML -}}
+      </div>
+      {{- end }}
+    </div>
+    {{- with .Params.links }}
+    <p class="pub-links">
+      {{- range $i, $link := . }}
+        {{- if $i }}<span class="pub-sep" aria-hidden="true"> | </span>{{ end -}}
+        <a href="{{ $link.url }}"{{ if hasPrefix $link.url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $link.label }}</a>
+      {{- end }}
+    </p>
+    {{- end }}
+  </div>
+</article>
