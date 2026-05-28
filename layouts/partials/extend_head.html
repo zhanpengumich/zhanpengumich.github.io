@@ -507,21 +507,34 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    text-align: justify;
-    text-justify: inter-ideograph;
     line-height: 1.5;
-    hyphens: auto;
   }
   .home-section.post-content #projects .proj-meta .proj-title {
     font-size: 1.05em;
     font-weight: 700;
     line-height: 1.4;
+    text-align: left;
   }
-  .home-section.post-content #projects .proj-meta .proj-desc p {
-    margin: 0 0 0.4em;
+  .home-section.post-content #projects .proj-meta .proj-authors,
+  .home-section.post-content #projects .proj-meta .proj-venue {
+    text-align: left;
   }
-  .home-section.post-content #projects .proj-meta .proj-desc p:last-child {
-    margin-bottom: 0;
+  /* Word 式两端对齐：拉单词间距，不在词中插入连字符 */
+  #projects .proj-desc,
+  .home-section.post-content #projects .proj-meta p.proj-desc {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    word-break: normal;
+    overflow-wrap: normal;
+    color: var(--content);
   }
   .home-section.post-content #projects .proj-links {
     margin: 0;
@@ -545,8 +558,7 @@
     color: #79b8ff;
   }
   #projects .proj-authors,
-  #projects .proj-venue,
-  #projects .proj-desc {
+  #projects .proj-venue {
     color: var(--content);
   }
   #projects .proj-links {

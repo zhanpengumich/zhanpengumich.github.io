@@ -67,9 +67,7 @@
       </div>
       {{- end }}
       {{- with .Params.description }}
-      <div class="proj-desc proj-block">
-        {{- . | markdownify -}}
-      </div>
+      <p class="proj-desc">{{- . | markdownify | replaceRE "</?p>" "" | safeHTML -}}</p>
       {{- end }}
     </div>
     {{- with .Params.links }}
