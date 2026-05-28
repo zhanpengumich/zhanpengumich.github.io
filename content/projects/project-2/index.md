@@ -1,29 +1,23 @@
 ---
-title: "Project Two Title Here"
-date: 2025-09-02
-authors: "Author A, Author B, **Z Xu**, Author C"
-venue: "Conference / Journal Name"
-year: 2025
+title: "Microscopic Hyperspectral Imager"
+weight: 30
 
-video: "demo.mp4"
+
+video: "HSI1.mp4"
 image: "cover.png"
 image_alt: "Project 2 preview"
 
-title_url: "https://your-project-2-page.example.com"
 
 description: |
-  One-paragraph description of the second project. 2–4 sentences are usually
-  enough to convey the motivation, approach, and headline result.
+  A hyperspectral imager (imaging spectrometer) with high spatial and spectral resolution for applications of environmental detection, remote sensing, and pattern recognitions etc. The diffractive optical module can be applied to different scenarios.
 
 links:
-  - label: webpage
-    url: "https://your-project-2-page.example.com"
-  - label: pdf
-    url: "paper.pdf"
-  - label: arXiv
-    url: "https://arxiv.org/abs/2400.00002"
-  - label: code
-    url: "https://github.com/your/repo2"
-
+  - label: Paper1
+    url: "https://opg.optica.org/oe/fulltext.cfm?uri=oe-28-21-30686"
+  - label: Paper2
+    url: "https://www.mdpi.com/2076-3417/10/14/4876"
+  - label: Paper3
+    url: "https://www.sciencedirect.com/science/article/pii/S1386142521006314"
+  
 hideSummary: true
 ---

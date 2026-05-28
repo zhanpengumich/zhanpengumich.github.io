@@ -1,5 +1,5 @@
 {{- /* 首页 featured 下方：顺序与 config menu.main 中五项一致 */ -}}
-{{- $projects := sort (where site.RegularPages "Section" "projects") "Date" "desc" -}}
+{{- $projects := sort (where site.RegularPages "Section" "projects") "Weight" "asc" -}}
 {{- $papers := sort (where site.RegularPages "Section" "papers") "Date" "desc" -}}
 {{- $courses := sort (where site.RegularPages "Section" "courses") "Date" "desc" -}}
 {{- $awards := sort (where site.RegularPages "Section" "awards") "Date" "desc" -}}
