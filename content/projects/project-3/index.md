@@ -9,7 +9,7 @@ image_alt: "Project 3 preview"
 
 
 description: |
-  A quantitative light-sheet microscopy with interchangeable objective for defect inspection of industrial samples.
+  A quantitative light-sheet microscopy with interchangeable objective for defect inspection of industrial samples. 
 
 links:
   - label: Paper

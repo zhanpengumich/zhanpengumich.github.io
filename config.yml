@@ -1,6 +1,6 @@
 baseURL: "https://zhanpengumich.github.io/"
 title: Zhanpeng Xu's Personal Website
-copyright: "Copyright Zhanpeng Xu 2026. Last updated: 2026-05-15"
+copyright: "Copyright Zhanpeng Xu 2026. Last updated: 2026-07-04"
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -113,6 +113,11 @@ params:
     homePublicationsNote: |
       First author paper are <span class="pres-intro-highlight">highlighted</span>. To view the full list of publications, please refer my [Google Scholar](https://scholar.google.com/citations?user=RRTTCJEAAAAJ&hl=en&authuser=1).
 
+
+      
+      X Peng, K Koo, J Qiu, G Karageorgos, A Dentinger, **Z Xu**, S Ragupathi, Z Yang, S Ghose, J Jo, N Abdulaziz, G Xu, W Zhao, D Chamberland, M Draelos, G Gandikota, D Mills*, X Wang*.
+      [An intelligent point-of-care photoacoustic and ultrasound dual-modality imaging system for Rheumatoid arthritis in fingers: Technical development and initial clinical test](https://doi.org/10.1016/j.pacs.2026.100849)
+      ***Photoacoustics*** 100849, (2026)
 
       Y Huang, I Oraiqat, D Litzenberg, M Karthikesh, C Tichacek, G Gonzalez, **Z Xu**, S Dykstra, B Li, S Hadley, E Moros, M Zhang, P Carson, K Cuneo, X Wang*, I Naqa*, W Zhang*.
       [Ionizing radiation acoustic and ultrasound dual-modality imaging for visualization of dose on anatomical structures during radiotherapy](https://doi.org/10.1016/j.pacs.2025.100742)
