@@ -1,6 +1,6 @@
 baseURL: "https://zhanpengumich.github.io/"
 title: Zhanpeng Xu's Personal Website
-copyright: "Copyright Zhanpeng Xu 2026. Last updated: 2026-07-04"
+copyright: "Copyright Zhanpeng Xu 2026. Last updated: 2026-08-01"
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -49,7 +49,7 @@ params:
             - label: Google Scholar
               url: "https://scholar.google.com/citations?user=RRTTCJEAAAAJ&hl=en&authuser=1"
         content: |
-            I’m a system engineer and researcher working at the intersection of advanced optical imaging, perception systems, and physical AI. Currently at [Tensor Auto](https://tensor.auto), I work on building camera perception and ADAS systems for the first personal robocar across autonomy levels L0-L4.
+            I’m a system engineer and scientist working at the intersection of advanced optical imaging, perception systems, and physical AI. Currently at [Applied Materials](https://www.appliedmaterials.com/us/en.html), I'm working on advanced imaging technology development for the semiconductor industry, with a focus on metrology solutions for the next generation of AI hardware. I used to build the camera perception system and advanced driver assistance system for the first personal robocar across autonomy levels L0-L4 at [Tensor Auto](https://tensor.auto).
 
             I received my Ph.D. in Biomedical Engineering from the University of Michigan in 2025, where I developed a multimodal in vivo imaging system integrating photoacoustic microscopy, optical coherence tomography, and fluorescence microscopy. The platform enabled high-resolution structural, functional, and molecular imaging for applications including early cancer detection, drug-delivery monitoring, and ophthalmic disease studies.
             
